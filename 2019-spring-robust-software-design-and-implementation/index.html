@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.6.0">
+<meta charset="UTF-8">
+<title>Robust Software Design and Implementation, CSCI 499, USC, Spring 2019</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+body { padding-top: 60px; }
+@media screen and (max-width: 767px) {
+        html { font-size: 0.5em; }
+}
+@media screen and (min-width: 768px) {
+        html { font-size: 0.7em; }
+}
+@media screen and (min-width: 992px) {
+        html { font-size: 0.8em; }
+}
+@media screen and (min-width: 1200px) {
+        html { font-size: 0.9em; }
+}
+ul {
+  padding-left: 0px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10">
+<div class="jumbotron">
+<div class="container">
+<div class="media">
+<div class="media-body align-self-end">
+<h1 class="media-heading display-4">Robust Software Design and Implementation</h1>
+<h4><small class="text-muted">Spring 2019</small><br></h4>
+</div>
+</div>
+<hr>
+<h3>Course Info</h3>
+<p>CSCI 499, Section ID: 29954<br>
+M/W 4-5:50pm, GFS 107<br>
+Instructor: <a href="https://raghavan.usc.edu">Barath Raghavan</a><br>
+Office Hours: Tue 2-3pm<br></p>
+<hr>
+<h3>Overview</h3>
+<p>This course will concern how to build robust and elegant software, built around a single project, and leveraging best practices from industry. You will write, over the semester, a single medium-sized piece of software in C++ (several thousand lines) from scratch. More importantly, every line of code will be code reviewed and we will iterate on the specifics of project designs and implementations over the semester. We will put into practice code review (both in and out of class, including peer review), design review, unit testing, style guides, interpretation of automated analysis, and benchmarking. You will do coding projects individually but will do peer review and collaborate in later phases of the project. Class time will be largely devoted to code/design review and discussion, and to student presentations.</p>
+<hr>
+<h3>Course Structure</h3>
+<p>The course will involve discussion and group work during class and very little traditional lecture. The focus of the class will be on submitting code for review and fixing it after review, and presenting the design and review of others' code.</p>
+<br>
+<h5>Readings</h5>
+<p>There will be a few reading assignments, mostly in the early weeks of the semester, and class discussion about those reading assignments. There will be no written responses required for reading assignments.</p>
+<br>
+<h5>Project</h5>
+<p>You will implement a medium-sized software project from scratch in C++. The assignment will be posted here on 1/16.</p>
+<hr>
+<h3>Grading</h3>
+<p>Details of grading will be provided in class. Unlike in other courses, code can and should be submitted and resubmitted, with grades being assigned only on the final version. Grades will be determined based upon the project, class participation, and attendance as follows:<br>
+<br>
+75% Project (25% for each of 3 milestones)<br>
+25% Class participation and attendance</p>
+<hr>
+<h3>Schedule</h3>
+<table class="table table-hover">
+<thead>
+<tr class="table-primary">
+<th class="col" style="width: 10%">Date</th>
+<th class="col" style="width: 45%">Reading</th>
+<th class="col" style="width: 45%">Assignment Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">M 1/7<br>
+Welcome</th>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th scope="row">W 1/9</th>
+<td>
+<ul>
+<li><a href="https://google.github.io/styleguide/cppguide.html">Google C++ Style Guide</a></li>
+<li><a href="https://github.com/google/googletest/blob/master/googletest/docs/primer.md">Googletest primer</a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Set up a <a href="https://www.vagrantup.com/">Vagrant VM</a> of a Linux distro that has a minimum of Clang 6 and GCC 7, such as Ubuntu 18.04.</li>
+<li>Among the Google C++ style guide rules, identify one that you agree with, one that you disagree with, and one you are confused by. For each, prepare a code example that compiles in your VM to present in class.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">M 1/14</th>
+<td>
+<ul>
+<li><a href="https://hpc.nih.gov/development/glog.html">Google glog</a></li>
+<li><a href="https://gflags.github.io/gflags/">Google gflags</a></li>
+<li><a href="https://github.com/google/benchmark/blob/master/README.md">Google benchmark</a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Refine your sort implementation into a project that uses glog, gflags, gbenchmark, and gtest to present in class. Add any relevant features to make use of all of these libraries. Use any build system you prefer.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">W 1/16</th>
+<td>-</td>
+<td>
+<ul>
+<li>Clone the repo discussed in class and perform a code review of the subsystem discussed (tag 'barath' on github as an additional reviewer).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">M 1/21<br>
+Holiday</th>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th scope="row">W 1/23</th>
+<td>-</td>
+<td>
+<ul>
+<li>Submit at least one pull request for review for your project implementation.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">M 1/28</th>
+<td>-</td>
+<td>
+<ul>
+<li>Submit at least one pull request for review for your project implementation.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">W 1/30</th>
+<td>-</td>
+<td>
+<ul>
+<li>Submit at least one pull request for review for your project implementation.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">M 2/4</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 2/6</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 2/11</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 2/13</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 2/18</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 2/20</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 2/25</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 2/27</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 3/4</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 3/6</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 3/11<br>
+Holiday</th>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th scope="row">W 3/13<br>
+Holiday</th>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th scope="row">M 3/18</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 3/20</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 3/25</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 3/27</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 4/1</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 4/3</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 4/8</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 4/10</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 4/15</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 4/17</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">M 4/22</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">W 4/24</th>
+<td>TBA</td>
+<td></td>
+</tr>
+<tr>
+<th scope="row">TBD</th>
+<td>Final presentation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+</body>
+</html>
