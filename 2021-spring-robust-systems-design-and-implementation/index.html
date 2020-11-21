@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Robust Systems Design and Implementation, CSCI 499, USC, Spring 2021</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+body { padding-top: 60px; }
+@media screen and (max-width: 767px) {
+        html { font-size: 0.5em; }
+}
+@media screen and (min-width: 768px) {
+        html { font-size: 0.7em; }
+}
+@media screen and (min-width: 992px) {
+        html { font-size: 0.8em; }
+}
+@media screen and (min-width: 1200px) {
+        html { font-size: 0.9em; }
+}
+ul {
+  padding-left: 0px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10">
+<div class="jumbotron">
+<div class="container">
+<div class="media">
+<div class="media-body align-self-end">
+<h1 class="media-heading display-4">Robust Systems Design and Implementation</h1>
+<h4><small class="text-muted">Spring 2021</small><br></h4>
+</div>
+</div>
+<hr>
+<h3>Course Info</h3>
+<p>CSCI 499, 30164R<br>
+M/W 10-11:50am, via Zoom<br>
+Instructor: <a href="https://raghavan.usc.edu">Barath Raghavan</a><br>
+Course Producers: TBA<br>
+</p>
+<hr>
+<h3>Overview</h3>
+<p>This course will concern how to build robust and elegant software, structured around a single project, and leveraging best practices from industry. Over the semester you'll write a single system in C++ that is several thousand lines long, all from scratch. All projects will be done individually.  More importantly, every line of code will be code reviewed and we will iterate on the specifics of project designs and implementations over the semester. We will put into practice code review (both in and out of class, including peer review), design review, unit testing, style guides, interpretation of automated analysis, and benchmarking. While your projects will be individual, you will do peer review and collaborate throughout the course. Class time will be largely devoted to code/design review and discussion, and to student presentations.</p>
+<hr>
+<h3>Course Structure</h3>
+<p>The course will involve discussion and group work during class and very little traditional lecture. The focus of the class will be on submitting code for review and fixing it after review, and presenting the design and review of others' code.  Attendance is required due to the discussion-oriented course structure.</p>
+<br>
+<h5>Readings</h5>
+<p>There will be a few reading assignments, mostly in the early weeks of the semester, and class discussion about those reading assignments. There will be no written responses required for reading assignments.</p>
+<br>
+<h5>Project</h5>
+<p>Project Specification TBA</p>
+<hr>
+<h3>Grading</h3>
+<p>Details of grading will be provided in class. Unlike in other courses, code can and should be submitted and resubmitted, with grades being assigned only on the final version. Grades will be determined based upon the project, class participation, and attendance as follows:<br>
+<br>
+75% Project (25% for each of 3 milestones)<br>
+25% Class participation and attendance</p>
+<hr>
+<h3>Schedule</h3>
+<table class="table table-hover">
+
+<thead>
+<tr class="table-primary">
+<th class="col" style="width: 35%">Date</th>
+<th class="col" style="width: 45%">Reading</th>
+<th class="col" style="width: 20%">Assignment Due</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<th scope="row">M 1/18<br>
+Holiday</th>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 1/20<br>
+Welcome</th>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 1/25</th>
+<td>
+<ul>
+<li>Send a pull request to username `barath` on GitHub (for mergesort).</li>
+<li>Set up a <a href="https://www.vagrantup.com/">Vagrant VM</a> of a Linux distro that has a minimum of Clang 6 and GCC 7, such as Ubuntu 18.04.</li>
+<li><a href="https://google.github.io/styleguide/cppguide.html">Google C++ Style Guide</a></li>
+<li><a href="https://github.com/google/googletest/blob/master/googletest/docs/primer.md">Googletest primer</a></li>
+<li><a href="https://hpc.nih.gov/development/glog.html">Google glog</a></li>
+<li><a href="https://gflags.github.io/gflags/">Google gflags</a></li>
+<li><a href="https://github.com/google/benchmark/blob/master/README.md">Google benchmark</a></li>
+<li><a href="https://grpc.io/">GRPC</a></li>
+<li>Among the Google C++ style guide rules, identify one that you agree with, one that you disagree with, and one you are confused by. For each, prepare a code example that compiles in your VM to present in class.</li>
+</ul>
+</td>
+<td>
+Readings due.
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 1/27<br>
+RAII, Testing</th>
+<td>
+-
+</td>
+<td>First PR due.</td>
+</tr>
+
+<tr>
+<th scope="row">M 2/1<br>
+Project</th>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 2/3</th>
+<td>
+<ul>
+<li><a href="https://www.cs.tufts.edu/~nr/cs257/archive/don-knuth/pearls-2.pdf">Quick vs. Clever</a></li>
+<li><a href="https://testing.googleblog.com/">Unit Testing</a></li>
+</ul>
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 2/8<br>
+Automated Bug Fiding</th>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 2/10<br>
+Project Q+A</th>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 2/15<br>
+Holiday</th>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 2/17<br>
+Global-scale System Design</th>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 2/22<br>
+Performance Choices</th>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 2/24<br>
+Go Language / Project Phase 2 Overview</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/1<br>
+Logging / Prometheus</th>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/3<br>
+Security</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/8</th>
+<td>
+<b>Guest</b>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/10<br>
+Project Q+A</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/15<br>
+Debugging</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/17<br>
+Debugging</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/22<br>
+Static Analysis</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/24<br>
+Fuzzing</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/29<br>
+Model Checking</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/31<br>
+Project Phase 3 Overview</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 4/5<br>
+Code Synthesis</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 4/7</th>
+<td>
+Holiday
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 4/12<br>
+Site Reliability Engineering</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 4/14<br>
+Chaos Engineering</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 4/19<br>
+Project Q+A</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 4/21</th>
+<td>
+<b>Guest</b>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 4/26<br>
+Project Q+A</th>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 4/28</th>
+<td>
+Code Review
+</td>
+<td>-</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+</body>
+</html>
