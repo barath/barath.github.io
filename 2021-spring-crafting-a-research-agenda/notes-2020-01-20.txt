@@ -1,0 +1,147 @@
+Crafting a Research Agenda, CSCI 699
+Barath Raghavan
+2020-01-20
+
+Course Overview
+* Audience: graduate students (or beyond) already engaged in research
+-- Not: undergrads
+* General Goal: practice thinking about research, but not navel gazing
+-- No one-size-fits-all solution, but many methods
+-- Make explicit a lot of implicit understanding and know-how
+* Concrete Goal: explore the boundaries of some research sub-area of interest to you
+-- Or even define a new sub-area
+* Non-goals
+-- Not: to identify research that will maximize research paper output
+-- Not: to preordain a career path, or to say that one career path is better than others
+* Diverse readings
+-- Across computer science: AI, cryptography, networking, programming languages, etc.
+-- Outside of computer science: philosophy, urban planning, math, sociology, history, etc.
+* Challenging
+-- Conceptually: will challenge you to think in new ways
+-- Practically: a consistent (not bursty) moderately-high reading and writing load
+* I want to learn more from you than you learn from me
+-- Also: I'd like you to learn more from each other than you learn from me
+-- But most importantly: I'd like you to learn the most by yourself through the work
+
+Perspective
+* Who am I to even be teaching this?
+-- I am not a senior faculty member
+-- I have an unusual background and set of interests
+* I could not have taught this course even a few years ago
+-- My perspectives have changed
+-- My interests have changed
+-- The world has changed (most importantly)
+* Missing subtitle of course: Crafting a Research Agenda in the post-X era
+-- where X = modern?
+-- where X = truth?
+-- where X = science?
+-- where X = ???
+
+No Method
+* There is no one method to crafting a research agenda
+* Don't believe everything _you_ think
+-- Also don't believe everything you read, even from famous / eminent people
+-- But don't reject everything either
+* Broken notion: craft a research agenda (or software project, or science experiment)
+-- Then do it
+* New notion: craft a research agenda and then...
+-- You might throw out the whole agenda
+-- You might realize its premises were wrong, or goals were wrong, or techniques are ill-suited
+-- This is fine, and expected
+* Why bother crafting an agenda, then?
+-- The _process_ of crafting the agenda is key
+-- It's ok if the document doesn't hold up with 20/20 hindsight; nothing does
+* The public agenda and private agenda will be different
+-- Public agenda is what you might write in a vision paper
+* Private agenda is a meta-agenda, with thoughts on "navigation"
+-- Goal is more of "how to navigate" rather than "charting the path from A to B"
+-- "Discover the road as you walk it"; you may not end up where you planned
+-- What are possible blockers/hurdles to this work? How do you test them, move past them?
+-- What are avenues to explore at each potential research crossroads?
+-- What are multiple hypothesis/ideas to consider for each sub-problem?
+-- What happens when something inevitably goes wrong?
+-- What are some possible unknown unknowns; how might they affect problem framing, the work process, the data sets used, etc.?
+
+"Normal" vs. "Revolutionary" Science
+* Our goal is to go beyond "normal" science
+-- Aspire to "revolutionary" science
+-- However, "normal" science is needed for "revolutionary" science
+* "Paradigm shifts" and "revolutionary" science are not solely major changes
+-- Both happen at many scales
+-- Impossible to categorize all research as strictly "normal" or "revolutionary"
+* You will get plenty of practice doing "normal" science as a PhD student
+-- Here we aim to discuss something bigger
+* Research trends in CS are like economic bubbles
+-- https://en.wikipedia.org/wiki/Jean-Paul_Rodrigue#/media/File:Stages_of_a_bubble.png
+* The world _demands_ of us something beyond "normal" science at this very not-normal time
+
+Systems and Meta-systemicity
+* Understanding research from a systems perspective
+-- Not: computer systems, but: conceptual and rational systems
+-- And moving beyond specific systems to a meta-systematic perspective
+* We are told we operate in a world of rationality as researchers
+-- A fair bit of our discussion will be on why this is often not the case
+* Research sometimes employs/requires meta-systematic thinking
+-- Thinking this way takes practice
+* There is no clear line between systematic and meta-systematic thinking
+-- Lots of shades of gray, another theme we will discuss
+-- Key is to not get stuck in one way of thinking
+
+Doing, not just thinking, in a Community of Practice
+* How to do good research can't be learned from a book
+-- Nor is thinking sufficient
+-- Nor is dreaming about grand results sufficient
+-- You must _do_ it, with others; lots of hard work
+-- Not unique to research: many things are this way
+* Example: Computational Agroecology
+-- I now do a fair amount of research on applying computing to sustainable agriculture
+-- I was trained in networking, but don't use any of it here
+-- I never formally studied the ostensible background topics: agriculture, sustainability, AI, etc.
+-- I learned the agriculture and sustainabiilty perspectives by doing, embedded in a community of practice (urban agriculturalists, mostly hobbyists but some professionals)
+-- I brought my own perspectives and techniques to bear
+* You, and your work, get better through those around you
+-- Cultivate your community
+
+Advancement at the Limits of Understanding
+* Just "doing" is insufficient; not all work is explicit or conscious
+-- Combination of conscious and subconscious work required
+* Example: Wagner's cryptanalysis in the hot tub
+* Example: ideas in the shower
+* Easy to have false insights if you don't put in the work
+-- No shortcuts
+* Hard to have insights without allowing room for the subconscious
+-- Fixating on rational, conscious methods is limiting
+
+Activities for the whole semester
+* Read widely, not just in the research literature
+-- The literature is a lagging indicator of where research is, sometimes as much as 4 years out of date (why?)
+-- You don't want to just read the "best" work
+-- Also: read what innovative researchers are themselves reading, so go find out
+-- Also: read very broadly, because you never know what might spark ideas
+* Read technical _and_ non-technical writing
+-- Read technical to learn new techniques for problem solving
+-- Read non-technical to consider new problems or problem framings or contexts
+* Don't rely upon others to lay out a vision for you
+-- Point: You'll just be building their vision
+-- Counterpoint: don't just ignore everyone and do your own thing
+-- Synthesis: build a community of researchers around a common vision
+* Take a lot of notes, not just of ideas but also of what you read
+-- Never know what ideas might connect
+
+Course Mechanics
+* Create a new folder in the shared Google Drive folder in the format "Full Name -- CSCI 699"
+-- In this folder you'll put all your materials
+* The first document you should now create in your folder is "Full Name -- CSCI 699 -- Responses"
+-- Clone the template doc and put it in your folder
+-- This is where you'll be writing reading responses, newest on top
+-- For each class date, should be heading for each class (notes taken in class discussion) and separate heading for reading responses
+
+Five Whys
+* Ask why five times to try to get to root causes
+-- We'll apply this later
+
+Activity
+* In groups of 4-5, discuss what "research" is.  Do not look it up online, in a dictionary, etc.
+-- What is research _to you_ _in your experience_? (Not what you've been told it is, or read that it is, or think that it should be.)
+-- Ask each of the following five times about research: what? who? where? when? why? how?
+-- Take notes in your new document 
