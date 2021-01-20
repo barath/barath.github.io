@@ -22,7 +22,8 @@ body { padding-top: 60px; }
         html { font-size: 0.9em; }
 }
 ul {
-  padding-left: 0px;
+  padding-left: 2px;
+  margin-left: 2px;
 }
 </style>
 </head>
@@ -44,7 +45,7 @@ ul {
 <p>CSCI 499, 30164R<br>
 M/W 10-11:50am, via Zoom<br>
 Instructor: <a href="https://raghavan.usc.edu">Barath Raghavan</a><br>
-Course Producers: TBA<br>
+Course Producer: Adam Egyed &lt;egyed@usc.edu&gt;<br>
 </p>
 <hr>
 <h3>Overview</h3>
@@ -70,9 +71,9 @@ Course Producers: TBA<br>
 
 <thead>
 <tr class="table-primary">
-<th class="col" style="width: 35%">Date</th>
-<th class="col" style="width: 45%">Reading</th>
-<th class="col" style="width: 20%">Assignment Due</th>
+<th class="col" style="width: 10%">Date</th>
+<th class="col" style="width: 40%">Reading</th>
+<th class="col" style="width: 50%">Assignment Due</th>
 </tr>
 </thead>
 
@@ -95,19 +96,15 @@ Welcome</th>
 <th scope="row">M 1/25</th>
 <td>
 <ul>
-<li>Send a pull request to username `barath` on GitHub (for mergesort).</li>
-<li>Set up a <a href="https://www.vagrantup.com/">Vagrant VM</a> of a Linux distro that has a minimum of Clang 6 and GCC 7, such as Ubuntu 18.04.</li>
-<li><a href="https://google.github.io/styleguide/cppguide.html">Google C++ Style Guide</a></li>
-<li><a href="https://github.com/google/googletest/blob/master/googletest/docs/primer.md">Googletest primer</a></li>
-<li><a href="https://hpc.nih.gov/development/glog.html">Google glog</a></li>
-<li><a href="https://gflags.github.io/gflags/">Google gflags</a></li>
-<li><a href="https://github.com/google/benchmark/blob/master/README.md">Google benchmark</a></li>
-<li><a href="https://grpc.io/">GRPC</a></li>
-<li>Among the Google C++ style guide rules, identify one that you agree with, one that you disagree with, and one you are confused by. For each, prepare a code example that compiles in your VM to present in class.</li>
+<li class="list-group-item"><a href="https://google.github.io/styleguide/cppguide.html">Google C++ Style Guide</a></li>
 </ul>
 </td>
 <td>
-Readings due.
+<ul>
+<li>Set up a <a href="https://www.vagrantup.com/">Vagrant VM</a> of a Linux distro that has Clang 6+ and GCC 7+, such as Ubuntu 20.04.1.</li>
+<li>Among the Google C++ style guide rules, identify one that you agree with, one that you disagree with, and one you are confused by. For each, prepare a code example that compiles in your VM to present in class.</li>
+<li>Send a pull request to username `barath` on GitHub (for mergesort).</li>
+</ul>
 </td>
 </tr>
 
@@ -115,19 +112,33 @@ Readings due.
 <th scope="row">W 1/27<br>
 RAII, Testing</th>
 <td>
--
+<ul>
+<li class="list-group-item"><a href="https://github.com/google/googletest/blob/master/googletest/docs/primer.md">Googletest primer</a></li>
+<li class="list-group-item"><a href="https://hpc.nih.gov/development/glog.html">Google glog</a></li>
+<li class="list-group-item"><a href="https://gflags.github.io/gflags/">Google gflags</a></li>
+<li class="list-group-item"><a href="https://github.com/google/benchmark/blob/master/README.md">Google benchmark</a></li>
+</ul>
 </td>
-<td>First PR due.</td>
+<td>
+<ul>
+<li>Send a pull request of your mergesort that uses glog, gflags, and benchmark, and has associated tests.</li>
+</ul>
+</td>
 </tr>
 
 <tr>
 <th scope="row">M 2/1<br>
 Project</th>
 <td>
--
+<ul>
+<li class="list-group-item"><a href="https://grpc.io/">GRPC</a></li>
+<li class="list-group-item">Project specification</li>
+</ul>
 </td>
 <td>
--
+<ul>
+<li>Compile a sample GRPC-based program and test it in your VM to share in class.</li>
+</ul>
 </td>
 </tr>
 
@@ -135,12 +146,16 @@ Project</th>
 <th scope="row">W 2/3</th>
 <td>
 <ul>
-<li><a href="https://www.cs.tufts.edu/~nr/cs257/archive/don-knuth/pearls-2.pdf">Quick vs. Clever</a></li>
-<li><a href="https://testing.googleblog.com/">Unit Testing</a></li>
+<!-- <li><a href="https://www.cs.tufts.edu/~nr/cs257/archive/don-knuth/pearls-2.pdf">Quick vs. Clever</a></li> -->
+<li class="list-group-item"><a href="TotT-2008-02-21.pdf">TotT: Too Many Tests</a></li>
+<li class="list-group-item"><a href="https://testing.googleblog.com/">Unit Testing</a></li>
 </ul>
 </td>
 <td>
--
+<ul>
+<li>Submit a project pull request.</li>
+</li>
+</ul>
 </td>
 </tr>
 
@@ -206,7 +221,11 @@ Go Language / Project Phase 2 Overview</th>
 <tr>
 <th scope="row">M 3/1<br>
 Logging / Prometheus</th>
-<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=7Vc8sxhy2I4">One Year After healthcare.gov</a>, Dickerson</li>
+</ul>
+</td>
 <td>-</td>
 </tr>
 
@@ -214,7 +233,9 @@ Logging / Prometheus</th>
 <th scope="row">W 3/3<br>
 Security</th>
 <td>
--
+<ul>
+<li class="list-group-item"><a href="https://www.usenix.org/conference/usenixsecurity18/presentation/mickens">Keynote, USENIX Security 2018</a>, Mickens</li>
+</ul>
 </td>
 <td>-</td>
 </tr>
@@ -239,9 +260,11 @@ Project Q+A</th>
 
 <tr>
 <th scope="row">M 3/15<br>
-Debugging</th>
+Reflection</th>
 <td>
--
+<ul>
+<li class="list-group-item"><a href="https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf">Reflections on Trusting Trust</a>, Thompson</li>
+</ul>
 </td>
 <td>-</td>
 </tr>
