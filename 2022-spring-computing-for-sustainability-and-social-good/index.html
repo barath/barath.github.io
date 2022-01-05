@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Computing for Sustainability and Social Good, CSCI 499, USC, Spring 2022</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+body { padding-top: 60px; }
+@media screen and (max-width: 767px) {
+        html { font-size: 0.5em; }
+}
+@media screen and (min-width: 768px) {
+        html { font-size: 0.7em; }
+}
+@media screen and (min-width: 992px) {
+        html { font-size: 0.8em; }
+}
+@media screen and (min-width: 1200px) {
+        html { font-size: 0.9em; }
+}
+ul {
+  padding-left: 2px;
+  margin-left: 2px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10">
+<div class="jumbotron">
+<div class="container">
+<div class="media">
+<div class="media-body align-self-end">
+<h1 class="media-heading display-4">Computing for Sustainability and Social Good</h1>
+<h4><small class="text-muted">Spring 2022</small><br></h4>
+</div>
+</div>
+<hr>
+<h3>Course Info</h3>
+<p>CSCI 499, 30097R<br>
+M/W 12:00-1:50pm, VHE 210/Zoom<br>
+Instructor: <a href="https://raghavan.usc.edu">Barath Raghavan</a><br>
+</p>
+<hr>
+<h3>Overview</h3>
+<p>In this course we will aim to understand computing's potential for good (and harm) in the context of monumental ecological, social, economic, and other forces that are reshaping our world today.  This semester will have a specific emphasis on sustainability and its connection to broader notions of social good. In teams of two, you will do a self-defined, concrete, semester-long independent project with a goal of real impact.  We will examine national- and global-scale challenges and more specific subproblems, and relevant technology projects. Many of the hardest ecological and social problems are intertwined in complex ways, as we will explore. While we will examine a few conventional engineering ethics topics, our aim is much broader: we will start with fundamental ecological and social challenges and then consider what role, if any, technology might play in responding to them. One of our aims will be to differentiate between nice-sounding-but-ineffective tech-for-good solutions and those that have a chance for real impact. As a result, we will take a systems perspective -- to trace root causes and find the right place(s) to make lasting change.</p>
+<hr>
+<h3>Course Structure</h3>
+<p>The course will involve discussion, presentation, and group work during class.</p>
+<br>
+<h5>Readings</h5>
+<p>The reading spans a wide range of topics and provides diverse perspectives on technology, social good, and global change. A number of assigned readings and videos also examine societal challenges to provide context and deepen our understanding of the role of technology in society; these assigned readings and videos can be of an unsettling nature as they discuss problematic aspects of society. Each is accompanied by a short response assignment, due by 7pm the day before each class meeting so that everyone is prepared for in-class discussion (for example, the reading response for a Wed is due 7pm Tue). Each student will maintain a Google Doc for their reading responses, and should add each reading response to that document, with newer responses at the top of the doc; the doc should be placed within the shared Google folder and shared only with the professor.<br>
+<br>
+It's highly recommended that you read each week's readings in the order listed -- each reading builds on previous ones.</p>
+<br>
+<h5>Project</h5>
+<p>In teams of two, you'll work on a semester-long independent project, culminating in a system that your team will build, test, and demonstrate to the class. You will scope out a real-world challenge that you want to address; articulate what makes solving this challenge important to society; examine possible avenues for addressing the challenge; identify key human, non-human, technological, and non-technological elements and factors in the challenge; define metrics and evaluation criteria for a possible response; and lay out milestones for the project you will develop to address the challenge. While it will be up to your team of two to meet the milestones, others in the course will be your sounding boards, beta testers, and partners in building something real, with an aim of having the project live on after the semester is over.<br>
+<br>
+Projects won't have a particular form or use any specific technology -- each project will be problem dependent and it will be up to you to explore options, learn relevant technologies, and implement your project. At a high level, the first milestone will require deeply understanding and then describing the problem being solved and carving out a specific piece where computing/technology will be useful. Later milestones will depend on the project, but may include an initial prototype of software and/or hardware for the project, alpha tests with others in the class, beta tests with real users outside of class, engagement with community groups, policymakers, nonprofits, businesses, and/or other stakeholders, etc. If things go well, each project could be the kernel of something much bigger, such as a new organization (for example, a nonprofit, startup, B corp, or community group) or research initiative through which the work will live on and grow in impact.</p>
+<hr>
+
+<h3>Grading</h3>
+<p>Details of grading will be provided in class. Grades will be determined based upon the project and weekly responses to readings as follows:<br>
+<br>
+60% Project (10% for each of 4 milestones, 20% for final deliverable)<br>
+40% Weekly responses</p>
+<hr>
+
+<h3>Schedule</h3>
+<table class="table table-hover">
+
+<thead>
+<tr class="table-primary">
+<th class="col" style="width: 10%">Date</th>
+<th class="col" style="width: 45%">Reading Due</th>
+<th class="col" style="width: 45%">Assignment Due</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<th scope="row">M 1/10</th>
+<td>Welcome</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 1/12</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.theatlantic.com/technology/archive/2011/03/technology-is-not-the-answer/73065/">Technology is Not the Answer</a>, Toyama</li>
+<li class="list-group-item"><a href="https://transitiontech.ca/pdf/Winner-Do-Artifacts-Have-Politics-1980.pdf">Do Artifacts Have Politics?</a>, Winner</li>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=wpkS1xym0HA#t=3m48s">How Societies Fail and Sometimes Succeed</a>, Diamond</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Why did you sign up for this course? (2 paragraphs)</li>
+<li>What large-scale (global/national) challenges worry/interest you, and why? (1 paragraph)</li>
+<li>What would Toyama and Winner ask one another; how would they reply? (2 paragraphs)</li>
+<li>What would Diamond say about the challenges we face in 2022, and what our responses should be? (2 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 1/17<br>
+Holiday</th>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 1/19</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=PJDrE8SoG1g">Can meaningful hope spring from revealing the depth of our climate failure?</a>, Anderson</li>
+<li class="list-group-item"><a href="https://www.chathamhouse.org/sites/default/files/2021-09/2021-09-14-climate-change-risk-assessment-summary-quiggin-et-al.pdf">Climate change risk assessment 2021</a>, Chatham House</li>
+<li class="list-group-item">(1) <a href="https://dothemath.ucsd.edu/2012/04/economist-meets-physicist/">Exponential Economist meets Finite Physicist</a>, (2) <a href="https://dothemath.ucsd.edu/2012/02/my-great-hope-for-the-future/">My Great Hope for the Future</a>, Murphy</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What likely climate impacts surprise you? How might society adapt? (3 paragraphs)</li>
+<li>What would Murphy and Anderson ask one another; how would they reply? (3 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 1/24</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://web.archive.org/web/20180623170607/http://www.peakoilindia.org/wp-content/uploads/2013/10/Limits-to-Growth-updated.pdf">Limits to Growth, Chapters 6-8</a>, Meadows</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Using Chapter 6 as a guide, give a present day example of a misapplication of technology and/or markets. (2 paragraphs)</li>
+<li>Using Chapter 7 as a guide, suggest a global system change that would align with the guidelines for sustainability. (2 paragraphs)</li>
+<li>Using Chapter 8 as a guide, describe what you think the third revolution analagous to the agricultural and industrial revolutions would look like today, and how it could take place. (2 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 1/26</th>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="https://www.theatlantic.com/technology/archive/2020/06/why-protests-work/613420/">Do Protests Even Work?</a>, (2) <a href="https://link.springer.com/article/10.1007/s10767-019-9317-2">Twitter and Teargas, review response</a>, (3) <a href="https://www.wired.com/story/zeynep-tufekci-facts-fake-news-verification/">The Imperfect Truth About Finding Facts in a World of Fakes</a>, (4) <a href="https://medium.com/message/ebola-the-real-reason-everyone-should-panic-889f32740e3e">Ebola: The Real Reason Everyone Should Panic</a>, (5) <a href="https://www.theinsight.org/p/against-nostalgia">Against Nostalgia</a>, (6) <a href="https://www.theinsight.org/p/lessons-from-a-pandemic-anniversary">Lessons from A Pandemic Anniversary</a>, (7) <a href="https://www.theinsight.org/p/critical-thinking-isnt-just-a-process">Critical Thinking isn't Just a Process</a>, Tufekci</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>How would Tufekci frame the institutional challenges behind the problem(s) you are most interested in solving? (2 paragraphs)</li>
+<li>How would Tufekci describe the social movement behind the problem(s) you are most interested in solving? (2 paragraphs)</li>
+<li>How would Tufekci describe the metaepistemology of the problem(s) you are most interested in solving? (2 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 1/31</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="http://www.sympoetic.net/Managing_Complexity/complexity_files/1973%20Rittel%20and%20Webber%20Wicked%20Problems.pdf">Dilemmas in a General Theory of Planning</a>, Rittel and Webber</li>
+<li class="list-group-item"><a href="https://www.motherjones.com/environment/2016/02/lead-exposure-gasoline-crime-increase-children-health/">Lead: America's Real Criminal Element</a> (optional: <a href="https://www.motherjones.com/kevin-drum/2018/02/an-updated-lead-crime-roundup-for-2018/">2018 update</a>), Drum</li>
+<li class="list-group-item"><a href="http://www.donellameadows.org/wp-content/userfiles/Leverage_Points.pdf">Leverage Points: Places to Intervene in a System</a>, Meadows</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What would Rittel/Webber and Meadows ask one another; how would they reply? (2 paragraphs)</li>
+<li>(Group) Describe your proposed project in detail (2 paragraphs on problem, 2 paragraphs on project idea, 2 paragraphs on technology, 2 paragraphs on societal impact).</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 2/2</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://beforewegoblog.com/purity-and-futures-of-hard-work-by-ada-palmer/">Hopepunk, Optimism, Purity, and Futures of Hard Work</a>, Palmer</li>
+<li class="list-group-item"><a href="https://meaningness.com/fluidity-desiderata">Desiderata for any future mode of meaningness</a>, Chapman</li>
+<li class="list-group-item">(1) <a href="https://www.resilience.org/stories/2014-10-09/what-shade-of-green-are-you/">What Shade of Green are You?</a>, (2) <a href="https://www.resilience.org/stories/2014-10-13/shades-of-green-part-2-reconciling-differences-and-building-solidarity/">Reconciling differences and building solidarity</a>, (3) <a href="https://www.resilience.org/stories/2014-10-21/a-movement-in-search-of-a-narrative/">A Movement in Search of a Narrative</a>, McGregor</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>(Group) What would Palmer say about the future your project would be situated in? (2 paragraphs)</li>
+<li>(Group) What would Chapman say about the modes of meaning your project would be situated in? (2 paragraphs)</li>
+<li>(Group) How would you taxonimize and find solidarity among those impacted by your project akin to McGregor? (2 paragraphs)</li>
+<li>(Group) Describe your first project milestone (3 paragraphs, one for goal, one for deliverable, and one for metrics/evaluation)</li>
+</ul>
+</td>
+</tr>
+
+
+<tr>
+<th scope="row">M 2/7</th>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="http://www.paulgraham.com/ds.html">Do Things that Don't Scale</a>, (2) <a href="http://www.paulgraham.com/top.html">The Top Idea in Your Mind</a>, (3) <a href="http://www.paulgraham.com/schlep.html">Schlep Blindness</a>, (4) <a href="http://www.paulgraham.com/relres.html">Relentlessly Resourceful</a>, (5) <a href="http://www.paulgraham.com/really.html">What Startups are Really Like</a> (patterns 3-12), Graham</li>
+<li class="list-group-item"><a href="http://computingwithinlimits.org/2015/papers/limits2015-silberman.pdf">Information systems for the age of consequences</a>, Silberman</li>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=8nLKHYHmPbo">How Permaculture Can Save Humanity and the Earth, but Not Civilization</a>, Hemenway</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What would Silberman and Hemenway ask one another; how would they reply? (2 paragraphs)</li>
+<li>(Group) Describe how you are planning to follow Graham's advice from (1) Do Things that Don't Scale, (2) Schlep Blindness, (3) Pattern 7 (Lots of Little Things), (4) Pattern 8 (Start with Something Minimal), and (5) Pattern 9 (Engage Users) from this week's essay (one paragraph each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 2/9</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="http://www.thisamericanlife.org/radio-archives/episode/423/the-invention-of-money">The Invention of Money</a>, This American Life</li>
+<li class="list-group-item"><a href="http://www.resilience.org/stories/2009-07-23/anti-ecology-money/">The Anti-Ecology of Money</a>, Greer</li>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=CZIINXhGDcs">Debt: The First 5000 Years</a>, Graeber</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Describe 3 economic arrangements and/or services and/or goods that might be re-evaluated; what is technology's role, and what would Greer or Graeber say? (2 paragraphs each)</li>
+<li>(Group) Describe your next three project milestones (3 paragraphs each, one for goal, one for deliverable, and one for metrics/evaluation)</li>
+<li>(Group) For each of Meadows's 12 leverage points, describe a possible "change" responsive to the problem you are working on (2-3 sentences per leverage point "change")</li>
+<li>(Group) Describe 3 possible economic arrangements for your project. (1 paragraph each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 2/14</th>
+<td>
+<b>Project Updates</b>
+</td>
+<td><b>Milestone 1:</b> Progress update.</td>
+</tr>
+
+<tr>
+<th scope="row">W 2/16</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://pdfs.semanticscholar.org/553c/6a6b29a818b63364538d944ff45ace915b1c.pdf">An Overview of the Knowledge Commons</a>, Hess and Ostrom</li>
+<li class="list-group-item">Sacred Economics (1) <a href="http://sacred-economics.com/sacred-economics-chapter-5-the-corpse-of-the-commons/">Ch. 5</a>, (2) <a href="http://sacred-economics.com/sacred-economics-chapter-11-currencies-of-the-commons/">Ch. 11</a>, (3) <a href="http://sacred-economics.com/sacred-economics-chapter-17-summary-and-roadmap/">Ch. 17</a>, Eisenstein</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What would Hess/Ostrom and Eisenstein ask each other; how would they reply? (3 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 2/21</th>
+<td>Holiday</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 2/23</th>
+<td>
+<b>Project Updates</b>
+</td>
+<td><b>Milestone 2:</b> Progress update.</td>
+</tr>
+
+<tr>
+<th scope="row">M 2/28</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.usenix.org/conference/usenixsecurity18/presentation/mickens">Keynote, USENIX Security 2018</a>, Mickens</li>
+<li class="list-group-item"><a href="https://ethicalos.org/wp-content/uploads/2018/08/Ethical-OS-Toolkit-2.pdf">Ethical OS Toolkit</a></li>
+<li class="list-group-item"><a href="https://librarianshipwreck.wordpress.com/2018/08/24/striving-to-minimize-technical-and-reputational-risks-ethical-os-and-silicon-valleys-guilty-conscience/">Ethical OS and Silicon Valley's guilty conscience</a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li>(Group) What would Mickens say about your project; how would you reply? (3 paragraphs)</li>
+<li>What would the Ethical OS authors ask the critics; how would they reply? (2 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/2</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=j8d-IYSM-08">The Three Evils of Society</a>, King</li>
+<li class="list-group-item"><a href="https://www.newyorker.com/magazine/2018/10/22/gandhi-for-the-post-truth-age">Gandhi for the Post-Truth Age</a>, Mishra</li>
+<li class="list-group-item"><a href="https://www.theatlantic.com/magazine/archive/2017/09/has-the-smartphone-destroyed-a-generation/534198/?single_page=true">Mental health and social media</a>, Twenge</li>
+<li class="list-group-item">(1) <a href="https://metarationality.com/refrigerator">Rationality and refrigerators</a>, (2) <a href="https://metarationality.com/credibility-post-truth">A credibility revolution in the post-truth era</a>, (3) <a href="https://meaningness.com/eggplant/introduction">Meta-rationality: An introduction</a>, Chapman</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What would Mishra and Chapman ask one another; how would they reply? (3 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/7</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="">Seeing Like a State</a> (excerpts), Scott</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>(Group) For the problem you are working on, how are you making the underlying reality more legible for your own sake and what are the impacts of that legibilization? (3 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/9</th>
+<td>
+<b>Project updates</b>
+</td>
+<td><b>Milestone 3:</b> Progress update.</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/14</th>
+<td>
+Holiday
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/16</th>
+<td>
+Holiday
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/21</th>
+<td>
+<b>Guest: <a href="https://chenjay.org/">Jay Chen</a></b><br><br>
+<ul>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=rmsmu4PMaJ4&t=3006s">Sustainability and Development</a>, Chen</li>
+<li class="list-group-item"><a href="https://metarationality.com/stem-fluidity-bridge">A bridge to meta-rationality</a>, Chapman</li>
+</ul>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/23</th>
+<td>
+The Thing from the Future
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 3/28</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://arxiv.org/pdf/2012.05345">Data and its (dis)contents: A survey of dataset development and use in machine learning research</a>, Paullada et al.</li>
+<li class="list-group-item"><a href="https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/">W.E.B. Du Bois' Visionary Infographics</a>, Mansky</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>(Group) In the use or generation of data and data types, how do you address and/or deal with their social construction? (4 paragraphs)
+<li>(Group) Situate your project in the current historical moment, building on Gandhi, King, Tufekci, Meadows, Chapman, and Diamond. (3-4 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 3/30</th>
+<td>
+<b>Project Updates</b>
+</td>
+<td><b>Milestone 4:</b> Progress update.</td>
+</tr>
+
+<tr>
+<th scope="row">M 4/4</th>
+<td>
+-
+</td>
+<td>Reading response checkpoint.</td>
+</tr>
+
+
+<tr>
+<th scope="row">W 4/6</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.jstor.org/stable/pdf/3101118.pdf?casa_token=fMEDqeqqTJ0AAAAA:Y2B-3n-f-oX27RrnbvOlSmxX9j3uBW_0OJIbXR_W5hk5Kn3YnGRqPb-wtyjTe9vCoQrI4PmZMAlPjLGLJX_XC8UYGIt_4ZxJKxaIlGyRnTBXam7ZRC0O">Authoritarian and Democratic Technics</a>, Mumford</li>
+<li class="list-group-item"><a href="https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/">Politics and the English Language</a>, Orwell</li>
+</ul>
+</td>
+<td>
+<li>Among technologies developed or popularized in the last 10 years, describe two that Mumford would consider authoritarian and two that Mumford would consider democratic.  (2 paragraphs each)</li>
+<li>(Group) What would Mumford say about your project; how would you reply? (3 paragraphs)</li>
+<li>(Group) Give a sample of (hypothetical or real) euphemistic writing that denies the problem you are working on, per Orwell.  (2-3 paragraphs)</li>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 4/11</th>
+<td>
+<b>Project Updates</b>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 4/13</th>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=7Vc8sxhy2I4">One Year After healthcare.gov</a>, Dickerson</li>
+</ul>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 4/18</th>
+<td>
+The Thing from the Future
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 4/20</th>
+<td>
+Design Spaces
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 4/25</th>
+<td>
+<b>Project presentations</b>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 4/27</th>
+<td>
+<b>Project presentations</b>
+</td>
+<td>-</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+</body>
+</html>
