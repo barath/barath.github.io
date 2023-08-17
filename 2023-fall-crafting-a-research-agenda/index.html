@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crafting a Research Agenda, CSCI 654, USC, Fall 2023</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+body { padding-top: 60px; }
+@media screen and (max-width: 767px) {
+        html { font-size: 0.5em; }
+}
+@media screen and (min-width: 768px) {
+        html { font-size: 0.7em; }
+}
+@media screen and (min-width: 992px) {
+        html { font-size: 0.8em; }
+}
+@media screen and (min-width: 1200px) {
+        html { font-size: 0.9em; }
+}
+ul {
+  padding-left: 2px;
+  margin-left: 2px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10">
+<div class="jumbotron">
+<div class="container">
+<div class="media">
+<div class="media-body align-self-end">
+<h1 class="media-heading display-4">Crafting a Research Agenda</h1>
+<h4><small class="text-muted">Fall 2023</small><br></h4>
+</div>
+</div>
+<hr>
+<h3>Course Info</h3>
+<p>CSCI 654, 30393D<br>
+M/W 10-11:50pm<br>
+Instructor: <a href="https://raghavan.usc.edu">Barath Raghavan</a><br>
+Office Hours: <a href="https://usc.zoom.us/j/8268678252">Th 10-11am</a><br>
+</p>
+<hr>
+<h3>Overview</h3>
+<p>
+In this course, we will aim to understand how to formulate a research agenda in Computer Science, examine trends that exist within sub-areas of CS, and identify fruitful and problematic research directions. We will examine barriers to scientific research advancement and how to avoid them when possible. We will practice thinking meta-systematically ("thinking outside of the box") when approaching the selection of research problems and developing research solutions. We will also study prior paradigm-shifting papers in CS research and guidance from eminent Computer Scientists who have articulated what makes for good CS research and strong CS research communities.
+<br><br>
+The course will explore the hybrid nature of Computer Science -- its existence at the intersection of mathematics, engineering, psychology, philosophy, statistics, and other disciplines -- and how to evaluate progress in CS research as we identify fruitful avenues of future study.  Our focus will not be on any one area of CS; we will examine research agendas in a variety of areas.
+<br><br>
+The course is intended for CS PhD students in their second year or later who are learning to articulate their own research objectives and plans.
+</p>
+<hr>
+<h3>Course Structure</h3>
+<p>The course will involve discussion, presentation, and group work during class.  In addition, students will work individually on an independent project, described below, to describe the past and potential-future research in an area of CS, possibly one that is of interest to the student(s) for future study such as in a dissertation, postdoc, or faculty position.</p>
+<br>
+<h5>Project</h5>
+<p>Computer Science research is diverse in both topic and method, building upon a wide array of adjacent disciplines and also having a rich body of practice of its own. Your task is to develop a research agenda in an area of CS and present this agenda in a variety of forms: 1) as a research whitepaper surveying prior work and describing a future agenda (8+ pages ACM format or equivalent), 2) as a grant one-pager that describes why such work should be funded, 3) as a 30-minute research presentation, 4) as a 10-minute general audience presentation, and 5) as a popular-science article.  Even if you choose to work on your own, you'll be paired up and will be providing peer feedback on a regular basis.  (To this end, you will need to make a complete draft of each milestone available to your partner five days in advance of each deadline, to allow them time to give you feedback and for you to make edits.)</p>
+<h5>Readings and Responses</h5>
+<p>Per-class assignments will focus on assigned readings and responses to those readings. For each class's assignment, add your responses to an appropriately titled section of your Google Doc, with your most recent additions at the top of the doc. Each day's assignment is due at the start of class that day.</p>
+<hr>
+
+<h3>Grading</h3>
+<p>Details of grading will be provided in class. Grades will be determined as follows:<br>
+<br>
+25% Reading responses<br>
+25% Peer feedback<br>
+50% Project</p>
+<hr>
+
+<h3>Schedule</h3>
+
+<table class="table table-hover">
+
+<thead>
+<tr class="table-primary">
+<th class="col" style="width: 10%">Date</th>
+<th class="col" style="width: 10%">Class Notes</th>
+<th class="col" style="width: 40%">Reading Due</th>
+<th class="col" style="width: 40%">Assignment Due</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<th scope="row">M 8/21<br>Welcome</th>
+<td><a href="notes-2023-08-21.html">Notes</a></td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 8/23<br>Foundations</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://metarationality.com/remodeling">Ontological remodeling</a>, Chapman</li>
+<li class="list-group-item"><a href="https://isi.edu/~johnh/TEACHING/CS651/ARCHIVE/Heilmeier92a.pdf">Some Reflections on Innovation and Invention</a>, Heilmeier</li>
+<li class="list-group-item"><a href="https://en.wikipedia.org/wiki/Five_whys">Five Whys</a>, Toyoda</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Why did you sign up for this course? (1 paragraph)</li>
+<li>Describe your current/recent research using the Heilmeier catechism (2-3 paragraphs), and ask the Five Whys on why you are working on it (1 paragraph).</li>
+<li>Describe two instances of ontological remodeling in any areas of CS, one successful and one failed; also describe how they align with Chapman's analysis. (2-3 paragraphs each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 8/28<br>Foundations</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://metarationality.com/artificial-intelligence-progress">How should we evaluate progress in AI?</a>, Chapman</li>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=dtZ-o96bH9A">The Power of Abstraction</a>, Liskov</li>
+<li class="list-group-item"><a href="https://www.youtube.com/watch?v=YHeyuD89n1Y">The Future of Networking, and the Past of Protocols</a>, Shenker</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Describe a recent-ish idea (within the last decade) in your area that has changed the way people think, leading to fundamentally-new research. (2 paragraphs)</li>
+<li>Apply Chapman's AI progress criteria to the topics described by Liskov and Shenker. (2-3 paragraphs each)</li>
+<li>Where are abstractions (per Liskov) used in your area of CS to extract simplicity (per Shenker)? (2 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 8/30<br>Foundations</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="https://www.cs.ucdavis.edu/~rogaway/papers/cc.pdf">Practice-Oriented Provable Security and the Social Construction of Cryptography</a> and (2) <a href="https://books.google.com/books?id=SwOkDwAAQBAJ&lpg=PA18&ots=bMtIgWHprB&dq=%22I%20am%20constructing%20a%20definition%22%20rogaway&pg=PA17#v=onepage&q&f=false">An Obsession with Definitions</a> (&sect;5 Conclusions), Rogaway</li>
+<li class="list-group-item"><a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web">ChatGPT Is a Blurry JPEG of the Web</a>, Chiang</li>
+<li class="list-group-item"><a href="https://youtu.be/vtIzMaLkCaM?t=31">The Craft of Writing Effectively</a> and <a href="https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/5/7046/files/2014/10/UnivChic_WritingProg-1grt232.pdf">referenced handout</a>, McEnerney</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Apply Chapman's AI progress criteria to the topics described by Rogaway. (2-3 paragraphs)</li>
+<li>How are definitions (per Rogaway) used in your area of CS, and what issues have arisen or might arise from those definitions? (3-4 paragraphs)</li>
+<li>What are mistakes in writing you have made per McEnerney and Chiang? (1-2 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 9/4<br>No Class</th>
+<td><a href="notes-2022-01-26.html">Notes</a></td>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="http://paulgraham.com/top.html">The Top Idea in Your Mind</a> and (2) <a href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas</a>, Graham</li>
+<li class="list-group-item"><a href="https://metarationality.com/how-to-think">How to Think Real Good</a>, Chapman</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Propose, at a high level, three new research topics/themes/directions that excite you; use the Heilmeier catechism. (2-3 paragraphs each)</li>
+<li>Revise (and include the before and after for) your three proposals using Chapman's guidance on problem formulations and vocabulary.</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 9/6<br>Ideas</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="http://www.donellameadows.org/wp-content/userfiles/Leverage_Points.pdf">Leverage Points: Places to Intervene in a System</a>, Meadows</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>For two of the three topics you proposed previously, produce a conceptual diagram of the research space following Meadows. Describe the leverage point(s) at which you are intervening. (2-3 paragraphs + diagram for each topic) </li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 9/11<br>Stepping Stones</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="https://metarationality.com/nebulosity">Clouds and eggplants</a>, (2) <a href="https://metarationality.com/refrigerator">Rationality and refrigerators</a>, (3) <a href="https://metarationality.com/reasonableness-aspects">Aspects of reasonableness</a>, (4) <a href="https://metarationality.com/routine">Reasonableness is routine</a>, (5) <a href="https://metarationality.com/action-in-rationalism">Acting on the truth</a>, and (6) <a href="https://metarationality.com/rationality">Taking rationality seriously</a>, Chapman</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Describe some research activity you or others do in your area(s) of interest that involves reasonableness; in your description, use at least 8 of the terms (in bold) from Chapman. (2-3 paragraphs)</li>
+<li>Describe two research approaches that have been "made to work", referencing two or more of the five techniques from Chapman. (2 paragraphs each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 9/13<br>Nebulosity</th>
+<td><!-- <a href="notes-2021-02-10.html">Notes</a> --></td>
+<td>
+<ul>
+<li class="list-group-item"><a href="http://www.sympoetic.net/Managing_Complexity/complexity_files/1973%20Rittel%20and%20Webber%20Wicked%20Problems.pdf">Dilemmas in a General Theory of Planning</a>, Rittel and Webber</li>
+<li class="list-group-item"><a href="https://www.journals.uchicago.edu/doi/full/10.1093/bjps/axw040">Messy Chemical Kinds</a>, Havstad</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Apply at least five of Rittel and Webber's ten "distinguishing properties" to a problem domain in your area of CS that has encountered difficulty in recent years. (3-4 paragraphs)</li>
+<li>Relate Rittel and Webber's "distinguishing properties" to Chapman's <a href="https://metarationality.com/how-to-think">guidance on problem formulation</a>. (2-3 paragraphs)</li>
+<li>Identify three "messy" "kinds" in any area of CS; what makes them messy? (1 paragraph each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 9/18<br>Meta-rationality</th>
+<td></td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://terrytao.wordpress.com/career-advice/theres-more-to-mathematics-than-rigour-and-proofs/">There's more to mathematics than rigour and proofs</a>, Tao</li>
+<li class="list-group-item">(1) <a href="https://metarationality.com/rationalism-definitions">Rationality, rationalism, and alternatives</a>, (2) <a href="https://metarationality.com/introduction">Meta-rationality: An introduction</a>, (3) <a href="https://metarationality.com/bongard-meta-rationality">A first lesson in meta-rationality</a>, and (4) <a href="https://metarationality.com/meta-systematic-judgement">Judging whether a system applies</a>, Chapman</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Intense research period: spend an intense period (~30 hours across two days) exploring the first steps of your research agenda; use the results to revise your agenda; describe your insights. (2-3 paragraphs)</li>
+<li>Propose your semester-long research topic; identify any meta-rational steps involved in your thinking. (4-5 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 9/20<br>Writing</th>
+<td><!-- <a href="notes-2022-02-09.html">Notes</a>--></td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://youtu.be/vtIzMaLkCaM?t=31">The Craft of Writing Effectively</a> and <a href="https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/5/7046/files/2014/10/UnivChic_WritingProg-1grt232.pdf">referenced handout</a>, McEnerney</li>
+<li class="list-group-item"><a href="https://talkingpointsmemo.com/edblog/thoughts-on-the-greatness-of-ulysses-s-grant">Thoughts on the Greatness of Ulysses S. Grant</a>, Marshall</li>
+<li class="list-group-item"><a href="https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/">Politics and the English Language</a>, Orwell</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Who are your readers for each of the documents you are writing, and what is the distinctive value that they may be looking for and getting from in your work: (1) research whitepaper, (2) grant one-pager, (3) research presentation, (4) general-audience presentation, and (5) popular-science article? (1 paragraph each)</li>
+<li>Re-write the abstract and introduction from your research agenda document in two ways: 1) to be as bad as possible (similar to the bad writing Orwell describes) and 2) to be as clear as possible (following Orwell's guidance) and with a focus on the importance to your research community (per McEnerney).</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 9/25</th>
+<td><!-- <a href="notes-2021-03-01.html">Notes</a> --></td>
+<td>
+<b>Project Updates</b>
+</td>
+<td><b>Milestone 1:</b> Progress update.</td>
+</tr>
+
+<tr>
+<th scope="row">W 9/27<br>Shadowing</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="https://metarationality.com/rational-pcr">Doing Being Rational</a> and (2) <a href="https://metarationality.com/meta-rationality-curriculum">What they don’t teach you at STEM school</a>, Chapman</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Ask the best researcher you know (other than your advisor) to let you shadow them as they do research (ideally an early-stage project), ideally for at least a few hours (on video chat or in person).</li>
+<li>Apply Chapman's methods and periodically ask questions to understand what they're doing (and/or ask them to narrate). Document what you saw. (3-4 paragraphs)
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 10/2<br>Eras</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="https://meaningness.com/systematic-mode">The glory of systems</a>, (2) <a href="https://meaningness.com/atomized-mode">Atomization: the kaleidoscope of meaning</a>, (3) <a href="https://metarationality.com/stem-fluidity-bridge">A bridge to meta-rationality</a>, and (4) <a href="https://metarationality.com/credibility-post-truth">A credibility revolution in the post-truth era</a>, Chapman</li>
+<li class="list-group-item"><a href="https://antilogicalism.com/wp-content/uploads/2017/07/the-postmodern-condition.pdf">The Postmodern Condition</a> (&sect;1, &sect;2, &sect;4, &sect;5, &sect;8, &sect;10, &sect;11, and &sect;13), Lyotard</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Describe two instances (past or present) where it is apparent a research project/agenda in CS was strongly influenced by the era in which it was pursued. (2 paragraphs each)</li>
+</ul>
+</td>
+</tr>
+
+
+
+<tr>
+<th scope="row">W 10/4<br></th>
+<td>-</td>
+<td>
+<b>Project updates</b>
+</td>
+<td><b>Milestone 2:</b> Progress update.</td>
+</tr>
+
+<tr>
+<th scope="row">M 10/9<br>Community</th>
+<td>Guest: <a href="https://cs.nyu.edu/~apanda/">Aurojit Panda</a></td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://drive.google.com/file/d/12PWgTCWPBpsj5OodIMbSb2enM7ZNGJb_/view">Rethinking SIGCOMM’s Conferences: Making Form Follow Function</a>, Shenker</li>
+</ul>
+</td>
+<td>-</td>
+</tr>
+
+
+
+
+<tr>
+<th scope="row">W 10/11<br>Community</th>
+<td><!-- <a href="notes-2021-02-24.html">Notes</a> --></td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://metarationality.com/upgrade-your-cargo-cult">Upgrade Your Cargo Cult</a>, Chapman</li>
+<li class="list-group-item"><a href="https://kk.org/thetechnium/scenius-or-comm/">Scenius, or Communal Genius</a>, Kelly</li>
+<li class="list-group-item"><a href="https://metarationality.com/rational-pcr">Doing Being Rational</a>, Chapman</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Describe three ideas for improving your research scene that require no outside resources. (2-3 sentences each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 10/16<br>Society</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="http://computingwithinlimits.org/2015/papers/limits2015-silberman.pdf">Information systems for the age of consequences</a>, Silberman</li>
+<li class="list-group-item"><a href="https://transitiontech.ca/pdf/Winner-Do-Artifacts-Have-Politics-1980.pdf">Do Artifacts Have Politics?</a>, Winner</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Describe how you might follow two or more of Silberman's recommendations in your proposed research agenda. (2 paragraphs each)</li>
+<li>Describe three recent research projects in any area(s) of CS; what are the embedded, unarticulated values/politics (per Winner) of these projects? (2 paragraphs each)</li>
+</ul>
+</td>
+</tr>
+
+
+
+<tr>
+<th scope="row">W 10/18<br>Society</th>
+<td><!-- <a href="notes-2021-03-10.html">Notes</a> --></td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://arxiv.org/pdf/2012.05345">Data and its (dis)contents: A survey of dataset development and use in machine learning research</a>, Paullada et al.</li>
+<li class="list-group-item"><a href="https://www.smithsonianmag.com/history/first-time-together-and-color-book-displays-web-du-bois-visionary-infographics-180970826/">W.E.B. Du Bois' Visionary Infographics</a>, Mansky</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>In the use or generation of data and data types in your work, how do you or can you address and/or deal with their social construction? (4 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 10/23<br>Society</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.bobbriscoe.net/projects/2020comms/refb/fair_ccro.pdf">Flow rate fairness: Dismantling a religion</a>, Briscoe</li>
+<li class="list-group-item"><a href="https://www.youtube.com/embed/jIXIuYdnyyk">21 Fairness Definitions and Their Politics</a>, Narayanan</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What notions of fairness are common between the Briscoe and Narayanan? Where would they agree? Where would they disagree? (2-3 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 10/25<br></th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="https://meaningness.com/complete-textures">Textures of completion</a>, (2) <a href="https://meaningness.com/wonder">Wonder</a>, and (3) <a href="https://meaningness.com/curiosity">Open-ended curiosity</a>, Chapman</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><b>Milestone 3:</b> Progress update.</li>
+<li>Allow yourself to wonder about examples of nebulosity in the context of any research topics; describe two such examples. (2-3 sentences each)</li>
+<li>Explore those two examples of nebulosity; describe your understanding of them. (2-3 sentences each)</li>
+<li>Play with the examples, modifying them and thus exploring the space; describe your explorations. (2-3 sentences each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 10/30<br>Theories</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="http://www.contrib.andrew.cmu.edu/~kk3n/philsciclass/kuhn.pdf">Objectivity, Value Judgment, and Theory Choice</a>, Kuhn</li>
+<li class="list-group-item"><a href="https://academic.oup.com/sysbio/article/68/5/840/5315532">Fossils with Feathers and Philosophy of Science</a>, Havstad and Smith</li>
+<li class="list-group-item"><a href="https://en.wikipedia.org/wiki/List_of_cognitive_biases">List of Cognitive Biases</a></li>
+<li class="list-group-item"><a href="https://en.wikipedia.org/wiki/List_of_fallacies">List of Fallacies</a></li>
+<li class="list-group-item"><a href="https://en.wikipedia.org/wiki/List_of_paradoxes">List of Paradoxes</a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Examine two research areas of CS and using the terminology of Lakatos and Havstad, describe whether they are each progressive, degenerative, or static research programs. (2 paragraphs each)</li>
+<li>Identify four cognitive biases, three fallacies, and two paradoxes from the lists that have arisen in any area of CS at any time in the past, especially those that have been a barrier to the advancement of research. (2-3 sentences each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 11/1<br>Metacognition</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item">The (Meta) <a href="http://situationlab.org/project/the-thing-from-the-future/">Thing from The Future</a></li>
+</ul>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 11/6<br>Collaboration</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://podcast.oddly-influenced.dev/episodes/boundary-objects">Boundary Objects</a>, Marick</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What are some boundary objects in your field at the intersection of it and another area? (1-2 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">W 11/8<br>Advice</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item"><a href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">You and Your Research</a>, Hamming</li>
+<li class="list-group-item"><a href="https://drive.google.com/file/d/0Bzis5MXW83vCdUdXYnFIVDVOSkE/view">How to Have a Bad Career in Research/Academia</a>, Patterson</li>
+<li class="list-group-item"><a href="https://www.cs.cmu.edu/~mblum/research/pdf/grad.html">What is Research?</a>, Blum</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What three pieces of advice were most surprising to you? (2-3 sentences each)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 11/13</th>
+<td>-</td>
+<td>
+<b>Project Updates</b>
+</td>
+<td><b>Milestone 4:</b> Progress update.</td>
+</tr>
+
+
+<tr>
+<th scope="row">W 11/15</th>
+<td>-</td>
+<td>
+<ul>
+<li class="list-group-item">(1) <a href="https://podcast.oddly-influenced.dev/episodes/viruses-cancer-tdd-and-packages-part-1">Viruses, Cancer, TDD, and "Packages"</a> and (2) <a href="https://podcast.oddly-influenced.dev/episodes/junit-and-molecular-genetics-packages-part-2">jUnit and What Makes a Successful Tool</a>, Marick</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>What are two 'packages', in Fujimura's terminology, in some area of CS and what made them successful? (2-3 paragraphs)</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<th scope="row">M 11/20</th>
+<td>-</td>
+<td>
+<b>Project Updates</b>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 11/22<br>No Class</th>
+<td>-</td>
+<td>
+-
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">M 11/27<br>Mock Program Committee</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th scope="row">W 11/29<br>Mock Program Committee</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr>
+
+<p>
+In addition to the assigned readings in the schedule above, this is an incomplete list of papers to consider for presentation in class; this list is incomplete and will be expanded:
+<ul class="list-group">
+<li class="list-group-item"><a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-28.pdf">Above the Clouds: A Berkeley View of Cloud Computing</a>, Ambrust et al.</li>
+<li class="list-group-item"><a href="http://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-23.pdf">The Parallel Computing Laboratory at U.C. Berkeley: A Research Agenda Based on the Berkeley View</a>, Asanović et al.</li>
+<li class="list-group-item"><a href="http://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-159.pdf">A Berkeley View of Systems Challenges for AI</a>, Stoica et al.</li>
+<li class="list-group-item"><a href="http://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf">Cloud Programming Simplified: A Berkeley View on Serverless Computing</a>, Jonas et al.</li>
+<li class="list-group-item"><a href="https://www.cs.yale.edu/homes/jf/FS.pdf">Distributed Algorithmic Mechanism Design</a>, Feigenbaum and Shenker</li>
+<li class="list-group-item"><a href="http://www.wisdom.weizmann.ac.il/~oded/PSX/on-pmc1.pdf">On Post-Modern Cryptography</a>, Goldreich</li>
+<li class="list-group-item"><a href="https://eprint.iacr.org/2019/1336.pdf">Critical Perspectives on Provable Security: Fifteen Years of "Another Look" Papers</a>, Koblitz and Menezes</li>
+<li class="list-group-item"><a href="https://arxiv.org/pdf/1810.08810.pdf">The Frontiers of Fairness in Machine Learning</a>, Chouldechova and Roth</li>
+</ul>
+</p>
+
+</div>
+</div>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+</body>
+</html>
